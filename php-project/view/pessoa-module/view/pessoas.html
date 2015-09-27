@@ -1,0 +1,15 @@
+<div>
+	<a href="#/pessoas/new"> Nova Pessoa</a>
+	<div ng-repeat="pessoa in pessoas">
+		<span> {{pessoa.id}} </span> <br />
+		<span> {{pessoa.nome}} </span> <br />
+		<span> {{pessoa.idade}} </span> <br />
+		<span> {{pessoa.caracteristicas}} </span>
+		
+		<!-- Exclusão -->
+		<button ng-click="remove(pessoa.id)">Excluir</button>
+		 
+		<br />
+		<hr />
+	</div>
+</div>
